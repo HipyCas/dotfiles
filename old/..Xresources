@@ -1,0 +1,14 @@
+! Make regolith keep the wallpaper configured in Gnome, that didn't work, so now we're setting the background to the earth one
+gnome.wallpaper: /usr/share/backgrounds/pop/nasa-53884.jpg 
+
+! ROFI
+! Enable icons
+! rofi.icons: true
+! Set icon theme
+! rofi.icon-theme: tela-dark
+
+! GTK
+! Theme
+gnome.gtk.theme: dracula-slim
+! Icon Theme
+gnome.icon.theme: tela-dark

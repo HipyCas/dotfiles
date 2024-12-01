@@ -1,4 +1,8 @@
 Session.vim
-.vim/plugged
-.vim/.netrwhist
-.git
+fs/.config/vim/plugged
+fs/.config/vim/.netrwhist
+
+fs/.config/nushell/history.txt
+
+# The file basically just includes the API key, which is oc secret
+fs/.wakatime.cfg
