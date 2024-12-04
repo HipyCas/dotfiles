@@ -42,6 +42,9 @@ set spell "en_CA"
 set hlsearch	     " highlight all search results
 set ignorecase	   " ignore case when searching
 set incsearch	     " show search matches as you type them
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
+set smartcase
 " hide search results (they don't hide when finished by default)
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -78,7 +81,7 @@ function! ToggleNumber()
     endif
 endfunc
 " key map for function
-" nnoremap <leader>t ToggleNumbers()
+nnoremap <leader>t ToggleNumbers()
 
 " Auto-load vim-plug if not loaded/created
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -109,3 +112,7 @@ let g:airline_theme = 'embark' " set status bar theme to same theme
 " editorconfig-vim settings + exceptions
 au FileType gitcommit let b:EditorConfig_disable = 1
 
+" TODO https://github.com/gelguy/wilder.nvim
+" TODO https://github.com/preservim/nerdtree
+" TODO https://github.com/lervag/vimtex
+" TODO https://github.com/dense-analysis/ale

@@ -78,3 +78,7 @@ $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/hipy/.local/shar
 $env.VOLTA_HOME = $"($env.HOME)/.volta"
 $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.VOLTA_HOME)/bin")
 
+# PNPM
+$env.PNPM_HOME = "/home/hipy/.local/share/pnpm"
+$env.PATH = ($env.PATH | split row (char esep) | prepend $env.PNPM_HOME)
+

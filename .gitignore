@@ -6,3 +6,9 @@ fs/.config/nushell/history.txt
 
 # The file basically just includes the API key, which is oc secret
 fs/.wakatime.cfg
+
+fs/.config/cmus/
+
+fs/.config/dunst/dunstrc.bkp
+
+fs/.config/filezilla/
